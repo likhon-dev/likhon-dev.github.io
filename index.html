@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>Likhon Dev | ডেভেলপার ব্লগ | Tech Insights</title>
+    
+    <!-- Critical Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Likhon Sheikh's personal blog about web development, technology, and programming insights in Bangla and English">
+    <meta name="keywords" content="web development, programming, বাংলা ব্লগ, technology, react, node.js">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://likhon-dev.github.io">
+    <meta property="og:title" content="Likhon Dev | Tech Blog">
+    <meta property="og:description" content="Personal tech blog by Likhon Sheikh">
+    <meta property="og:image" content="https://likhon-dev.github.io/assets/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://likhon-dev.github.io">
+    <meta name="twitter:title" content="Likhon Dev | Tech Blog">
+    <meta name="twitter:description" content="Personal tech blog by Likhon Sheikh">
+    <meta name="twitter:image" content="https://likhon-dev.github.io/assets/images/twitter-image.png">
+    
+    <!-- CDN Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/assets/js/main.js" as="script">
+    <link rel="preload" href="/assets/css/main.css" as="style">
+</head>
+<body class="bg-gray-100 text-gray-900 font-bangla">
+    <div id="app" x-data="blogApp()" x-init="initApp()">
+        <header class="bg-blue-600 text-white p-4">
+            <nav class="container mx-auto flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold">লিখন ডেভ | Likhon Dev</a>
+                <div class="space-x-4">
+                    <a href="/blog" class="hover:text-blue-200">ব্লগ / Blog</a>
+                    <a href="/about" class="hover:text-blue-200">আমি / About</a>
+                    <a href="/contact" class="hover:text-blue-200">যোগাযোগ / Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container mx-auto mt-8 p-4">
+            <div id="content-loader" x-html="pageContent"></div>
+        </main>
+
+        <footer class="bg-gray-800 text-white p-6 mt-8">
+            <div class="container mx-auto text-center">
+                <p>© 2024 Likhon Sheikh | All Rights Reserved</p>
+                <div class="mt-4 space-x-4">
+                    <a href="https://github.com/likhon-dev" target="_blank">GitHub</a>
+                    <a href="https://t.me/likhondev" target="_blank">Telegram</a>
+                    <a href="mailto:me@likhon.dev">Email</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CDN Scripts -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/es/highlight.min.js"></script>
+
+    <!-- Local Scripts -->
+    <script src="/assets/js/main.js" type="module"></script>
+</body>
+</html>
