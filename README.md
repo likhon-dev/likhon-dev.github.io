@@ -1,27 +1,37 @@
-# Likhon Dev Blog CMS Project Structure
+# Likhon Dev Blog CMS
 
+## 🚀 Project Overview
+A modern, static blog CMS with multi-language support, built for GitHub Pages.
+
+## 📂 Project Structure
 ```
 likhon-dev.github.io/
+│
+├── .github/
+│   └── workflows/
+│       ├── deploy.yml
+│       └── build.yml
 │
 ├── assets/
 │   ├── css/
 │   │   ├── main.css
-│   │   ├── responsive.css
-│   │   └── bangla-fonts.css
+│   │   ├── fonts.css
+│   │   └── responsive.css
 │   │
 │   ├── js/
 │   │   ├── main.js
 │   │   ├── cms.js
-│   │   └── seo.js
+│   │   ├── seo.js
+│   │   └── utils.js
 │   │
 │   └── fonts/
-│       ├── bangla/
-│       └── english/
+│       ├── bn/
+│       └── en/
 │
 ├── content/
 │   ├── posts/
-│   │   ├── 2024-01-01-first-post.md
-│   │   └── 2024-02-15-tech-insights.md
+│   │   ├── 2024-01-first-post.md
+│   │   └── 2024-02-tech-insights.md
 │   │
 │   ├── pages/
 │   │   ├── about.md
@@ -31,8 +41,7 @@ likhon-dev.github.io/
 │
 ├── dist/
 │   ├── index.html
-│   ├── blog/
-│   └── pages/
+│   └── assets/
 │
 ├── src/
 │   ├── templates/
@@ -43,35 +52,37 @@ likhon-dev.github.io/
 ├── scripts/
 │   ├── build.js
 │   ├── deploy.js
-│   └── generate-sitemap.js
+│   └── sitemap.js
 │
+├── .gitignore
 ├── README.md
 ├── index.html
 ├── sitemap.xml
 └── robots.txt
 ```
 
-## Project Setup Guidelines
+## 🛠 Setup Instructions
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run local development: `npm run dev`
+4. Build for production: `npm run build`
 
-### Key Features
-- Static Site Generation
-- Multi-language Support (Bangla & English)
+## 🌐 Features
+- Multi-language Support
 - SEO Optimized
-- Mobile Responsive
-- Content Management System (CMS)
+- Static Site Generation
+- Responsive Design
+- Performance Monitoring
 
-### Recommended Technologies
-- Marked.js (Markdown Parsing)
+## 📦 Technologies
 - Tailwind CSS
 - Alpine.js
+- Marked.js
 - Highlight.js
-- Intersection Observer API
-- Web Vitals
-```
 
-### Recommended CDN Resources
-1. Google Fonts
-2. Cloudflare CDN
-3. jsDelivr
-4. UNPKG
-5. cdnjs
+## 🚢 Deployment
+Deployed automatically via GitHub Actions to GitHub Pages
+
+## 📝 License
+MIT License
+```
